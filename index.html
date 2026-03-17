@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Mis XV Años - Helith</title>
+
+    <!-- ICONOS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- FUENTES -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ANIMACIONES -->
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- MUSICA DE FONDO -->
+
+    <audio id="bgMusic" loop>
+    <source src="assets/musica.mp3" type="audio/mpeg">
+    </audio>
+
+ 
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-content" data-aos="zoom-in">
+
+        <i class="fas fa-guitar music-icon"></i>
+
+        <h1>Mis XV Años</h1>
+
+        <p>
+          Con cariño y entusiasmo te invitamos a celebrar este día especial
+        </p>
+
+        <div class="profile-photo">
+          <img src="assets/3.jpeg" alt="Sarah" />
+        </div>
+
+      </div>
+
+    </section>
+
+    <button id="toggleMusic" class="music-btn">
+    <i class="fas fa-music"></i>
+    </button>
+
+
+
+    <!-- CONTADOR -->
+    <section class="countdown-container" data-aos="fade-up">
+
+      <h3 class="section-title">Faltan:</h3>
+
+      <div id="countdown">
+
+        <div class="time-box">
+          <span id="days">00</span>
+          <small>Días</small>
+        </div>
+
+        <div class="time-box">
+          <span id="hours">00</span>
+          <small>Hrs</small>
+        </div>
+
+        <div class="time-box">
+          <span id="minutes">00</span>
+          <small>Min</small>
+        </div>
+
+        <div class="time-box">
+          <span id="seconds">00</span>
+          <small>Seg</small>
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- SECCIÓN LILA -->
+    <div class="lilac-section">
+
+      <!-- FONDO DE ESTRELLAS -->
+      <div class="stars-background"></div>
+
+
+
+    <!-- FAMILIA -->
+
+    <section class="family-container">
+
+    <div class="family-card-single" data-aos="fade-up">
+
+        <p class="role-text">
+        Junto con mi mamá
+        </p>
+
+        <h2 class="family-name">
+        Sarah Rangel Sánchez
+        </h2>
+
+        <p class="role-text" style="margin-top: 20px;">
+        Y mi madrina
+        </p>
+
+        <h2 class="family-name">
+        María de los Angeles Sánchez Velázquez
+        </h2>
+
+    </div>
+
+    </section>
+
+
+
+
+      <!-- INVITACIÓN -->
+      <section class="invitation-highlight" data-aos="flip-up">
+
+        <div class="highlight-card">
+
+          <h3>¡Te esperamos!</h3>
+
+          <p class="highlight-date">
+            25 de Julio de 2026
+          </p>
+
+          <p class="highlight-text">
+            Para celebrar mis XV años
+          </p>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- EVENTO -->
+      <section class="event-details" data-aos="fade-up">
+
+        <div class="card">
+
+          <h3>
+            Recepción
+          </h3>
+
+          <p class="time">
+            17:00 horas
+          </p>
+
+          <hr />
+
+          <h4>
+            Salón de eventos
+          </h4>
+
+          <p>
+            Hacienda del Ciervo 39, Huixquilucan, Edo. Mex.
+          </p>
+
+
+
+          <div class="map-container">
+
+            <iframe
+              src="https://www.google.com/maps?q=Hacienda+del+Ciervo+39&output=embed"
+              width="100%"
+              height="250"
+              style="border:0;border-radius:10px"
+              loading="lazy"
+            ></iframe>
+
+          </div>
+
+
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Hacienda+del+Ciervo+39"
+            target="_blank"
+            class="btn-map"
+          >
+            Abrir en Google Maps 📍
+          </a>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- CÓDIGO DE VESTIMENTA Y REGALOS -->
+      <section class="dress-gift-section">
+
+        <div class="dress-gift-wrapper">
+
+          <!-- VESTIMENTA -->
+          <div class="dress-card">
+
+            <i class="fas fa-user-tie dress-icon"></i>
+
+            <h3>
+              Código de Vestimenta
+            </h3>
+
+            <p class="dress-type">
+              Cocktail
+            </p>
+
+            <p class="dress-text">
+              Te invitamos a vestir elegante para celebrar esta ocasión especial
+            </p>
+
+          </div>
+
+
+
+          <!-- MESA DE REGALOS -->
+          <div class="gift-card">
+
+            <i class="fas fa-gift gift-icon"></i>
+
+            <h3>
+              Mesa de Regalos
+            </h3>
+
+            <p class="gift-text">
+              Gracias por acompañarme en este día tan especial.
+              Si deseas hacerme un obsequio, esta mesa de regalos
+              fue preparada con cariño.
+            </p>
+
+            <a
+              href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51956403"
+              target="_blank"
+              class="btn-gift"
+            >
+              Ver Mesa de Regalos 🎁
+            </a>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+
+    <!-- PROGRESO DEL EVENTO PREMIUM -->
+
+    <section class="event-progress" id="eventProgress">
+
+    <h2 class="section-title">
+        Programa
+    </h2>
+
+    <div class="progress-bar"></div>
+
+    <div class="progress-container">
+
+        <!-- PASO 1 -->
+        <div class="progress-step">
+
+        <div class="progress-circle">
+            <i class="fas fa-car"></i>
+        </div>
+
+        <h3>Recepción</h3>
+
+        <p class="progress-time">17:00</p>
+
+        <p class="progress-text">
+            Con valet parking
+        </p>
+
+        </div>
+
+
+
+        <!-- PASO 2 -->
+        <div class="progress-step">
+
+        <div class="progress-circle">
+            <i class="fas fa-utensils"></i>
+        </div>
+
+        <h3>Banquete</h3>
+
+        <p class="progress-time">18:00</p>
+
+        </div>
+
+
+
+        <!-- PASO 3 -->
+        <div class="progress-step">
+
+        <div class="progress-circle">
+            <i class="fas fa-heart"></i>
+        </div>
+
+        <h3>Gracias por acompañarnos</h3>
+
+        <p class="progress-time">1:00</p>
+
+        </div>
+
+    </div>
+
+    </section>
+
+     
+    <!-- GALERÍA DESLIZANTE -->
+
+    <section class="photo-gallery" data-aos="fade-up">
+        
+
+    <h2 class="section-title">
+        Mis Momentos
+    </h2>
+
+    <div class="slider">
+
+        <div class="slides">
+
+        <img src="assets/1.jpeg" class="slide active">
+        <img src="assets/2.jpeg" class="slide">
+        <img src="assets/3.jpeg" class="slide">
+        <img src="assets/4.jpeg" class="slide">
+        <img src="assets/5.jpeg" class="slide">
+
+        </div>
+
+        <!-- BOTONES -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+
+        <!-- INDICADORES -->
+        <div class="dots"></div>
+
+    </div>
+
+    </section>
+
+
+    <!-- CONFIRMAR ASISTENCIA -->
+
+    <section class="rsvp-section" data-aos="fade-up">
+
+    <h2 class="section-title">
+        Confirmar Asistencia
+    </h2>
+
+    <p class="rsvp-text">
+        Por favor confirma tu asistencia por WhatsApp
+    </p>
+
+    <a 
+        href="https://wa.me/5215539750429?text=Hola%20confirmo%20mi%20asistencia%20a%20los%20XV%20💜" 
+        target="_blank" 
+        class="whatsapp-btn"
+    >
+        <i class="fab fa-whatsapp"></i>
+        Confirmar por WhatsApp
+    </a>
+
+    </section>
+
+
+    
+    <!-- FOOTER -->
+
+    <footer class="invitation-footer" data-aos="fade-up">
+
+    <div class="footer-content">
+
+        <p class="footer-text">
+        Con mucho cariño
+        </p>
+
+        <h2 class="footer-name">
+        Helith
+        </h2>
+
+        <p class="footer-message">
+        Gracias por acompañarme en este día tan especial
+        </p>
+
+        <div class="footer-heart">
+        <i class="fas fa-heart"></i>
+        </div>
+
+    </div>
+
+    </footer>
+
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
+
+  </body>
+
+</html>
