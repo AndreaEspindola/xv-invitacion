@@ -113,7 +113,9 @@ h3 {
   display: flex;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
+
 
 .time-box {
   background: var(--lila-claro);
@@ -130,6 +132,18 @@ h3 {
   font-weight: bold;
 }
 
+@media(max-width:768px){
+
+  .time-box{
+    padding: 15px;
+    min-width: 70px;
+  }
+
+  .time-box span{
+    font-size: 2rem;
+  }
+
+}
 
 /* FAMILY */
 
@@ -251,6 +265,12 @@ h3 {
   font-size: 2.5rem;
 }
 
+.time {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 
 /* MAP BUTTON */
 
@@ -276,7 +296,7 @@ h3 {
 
 .dress-gift-section{
   padding:60px 20px;
-  background:var(--lila-claro);
+  background: transparent;
 }
 
 .dress-gift-wrapper{
@@ -296,6 +316,8 @@ h3 {
   box-shadow:0 10px 20px rgba(0,0,0,0.08);
   text-align:center;
 }
+
+
 
 .dress-card h3,
 .gift-card h3{
@@ -589,6 +611,8 @@ h3 {
 }
 
 /* FOOTER INVITACION */
+
+
 
 .invitation-footer{
 
@@ -951,4 +975,113 @@ h3 {
 
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 
+}
+
+/* FOOTER BASE */
+
+.invitation-footer{
+  position: relative;
+  overflow: hidden;
+}
+
+/* ORNAMENTO BASE */
+
+.footer-ornament{
+
+  position: absolute;
+
+  width: 120px;
+  height: 120px;
+
+  bottom: 10px;
+
+  opacity: 0.8;
+
+}
+
+/* IZQUIERDA */
+
+.footer-ornament.left{
+  left: 10px;
+}
+
+/* DERECHA (espejo) */
+
+.footer-ornament.right{
+  right: 10px;
+  transform: scaleX(-1);
+}
+
+/* FORMA BARROCA */
+
+.footer-ornament::before,
+.footer-ornament::after{
+
+  content: "";
+
+  position: absolute;
+
+  border: 2px solid rgba(255,255,255,0.7);
+
+  border-radius: 50%;
+
+}
+
+/* CURVA GRANDE */
+
+.footer-ornament::before{
+
+  width: 100px;
+  height: 100px;
+
+  bottom: 0;
+  left: 0;
+
+  border-top: none;
+  border-right: none;
+
+  transform: rotate(-20deg);
+
+}
+
+/* CURVA PEQUEÑA INTERNA */
+
+.footer-ornament::after{
+
+  width: 60px;
+  height: 60px;
+
+  bottom: 20px;
+  left: 20px;
+
+  border-top: none;
+  border-right: none;
+
+  transform: rotate(25deg);
+
+}
+
+/* DETALLE CENTRAL */
+
+.footer-ornament{
+
+  background:
+    radial-gradient(circle at 30% 70%, rgba(255,255,255,0.6) 2px, transparent 3px),
+    radial-gradient(circle at 60% 40%, rgba(255,255,255,0.4) 2px, transparent 3px);
+}
+
+
+.footer-ornament{
+  animation: floatOrnament 6s ease-in-out infinite;
+}
+
+@keyframes floatOrnament{
+  0%{ transform: translateY(0) scaleX(1); }
+  50%{ transform: translateY(-5px) scaleX(1); }
+  100%{ transform: translateY(0) scaleX(1); }
+}
+
+/* mantener espejo */
+.footer-ornament.right{
+  transform: scaleX(-1);
 }
