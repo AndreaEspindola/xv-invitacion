@@ -503,16 +503,6 @@ h3 {
 
 }
 
-@media (max-width: 768px){
-
-  .section-title::before{
-    width: 60%; /* 🔥 se adapta al ancho */
-    height: 3px; /* opcional más delgada */
-    margin-bottom: 10px;
-  }
-
-}
-
 .photo-gallery .section-title::before{
 
   content: "";
@@ -523,8 +513,7 @@ h3 {
   left: 50%;
 
   transform: translateX(-50%);
-
-
+  
   width: 800px; /* largo de la linea */
   height: 4px;
 
@@ -534,7 +523,15 @@ h3 {
 
 }
 
+@media (max-width: 768px){
+  .photo-gallery .section-title::before{
+    width: 60%; 
+    height: 3px;
+  }
+}
+
 .slider{
+  
 
   position: relative;
 
